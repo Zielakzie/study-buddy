@@ -18,15 +18,15 @@
     "eject": "react-scripts eject"
   },
   "lint-staged": {
-      "src/**/*.{js,json}": [
-        "prettier --write"
-      ]
-    },
+    "src/**/*.{js,json}": [
+      "prettier --write"
+    ]
+  },
   "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged"
-      }
-    },
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
