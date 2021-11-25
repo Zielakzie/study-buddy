@@ -14,5 +14,3 @@ export const StyledList = styled.ul`
   margin: 0;
   padding: 0;
 `;
-
-//test
