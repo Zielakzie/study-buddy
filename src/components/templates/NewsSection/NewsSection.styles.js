@@ -1,5 +1,5 @@
-import { ViewWrapper } from 'components/molecules/ViewWrapper/ViewWrapper';
 import styled from 'styled-components';
+import { ViewWrapper } from 'components/molecules/ViewWrapper/ViewWrapper';
 
 export const Wrapper = styled.div`
   grid-row: 1 / 3;
@@ -38,7 +38,7 @@ export const TitleWrapper = styled.div`
 
   p {
     margin: 0;
-    font-size: ${({ theme }) => theme.fontSize.m};
+    font-size: ${({ theme }) => theme.fontSize.l};
   }
 `;
 

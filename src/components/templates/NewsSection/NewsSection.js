@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Wrapper, NewsSectionHeader, ArticleWrapper, TitleWrapper, ContentWrapper } from './NewsSection.styles';
+import { ArticleWrapper, ContentWrapper, NewsSectionHeader, TitleWrapper, Wrapper } from 'components/templates/NewsSection/NewsSection.styles';
 import { Button } from 'components/atoms/Button/Button';
 import axios from 'axios';
 
@@ -46,8 +46,8 @@ const NewsSection = () => {
     <Wrapper>
       <NewsSectionHeader>University news feed</NewsSectionHeader>
       {articles.length > 0 ? (
-        articles.map(({ title, category, content, image = null }) => (
-          <ArticleWrapper key={title}>
+        articles.map(({ id, title, category, content, image = null }) => (
+          <ArticleWrapper key={id}>
             <TitleWrapper>
               <h3>{title}</h3>
               <p>{category}</p>
@@ -56,7 +56,7 @@ const NewsSection = () => {
               <p>{content}</p>
               {image ? <img src={image.url} alt="article" /> : null}
             </ContentWrapper>
-            <Button isBig>click me</Button>
+            <Button isBig>Read more</Button>
           </ArticleWrapper>
         ))
       ) : (
